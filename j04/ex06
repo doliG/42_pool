@@ -1,0 +1,38 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glodi <glodi@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/08/08 08:56:11 by glodi             #+#    #+#             */
+/*   Updated: 2017/08/08 14:17:54 by glodi            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+#include <time.h>
+
+int ft_is_prime(int nb);
+
+int main()
+{
+	int n;
+
+	n = 3;
+	printf("%d est premier ? > %d - 1 (output - expected)\n", n, ft_is_prime(n));
+	n = 8;
+	printf("%d est premier ? > %d - 0 (output - expected)\n", n, ft_is_prime(n));
+	n = 17;
+	printf("%d est premier ? > %d - 1 (output - expected)\n", n, ft_is_prime(n));
+
+	n = 74;
+	printf("%d est premier ? > %d - 0 (output - expected)\n", n, ft_is_prime(n));
+
+	n = 2147483647;
+	float startTime = (float)clock()/CLOCKS_PER_SEC;
+	printf("%d est premier ? > %d - 1 (output - expected)\n", n, ft_is_prime(n));
+	float endTime = (float)clock()/CLOCKS_PER_SEC;
+	printf("Time for biggest int : %lf\n", endTime - startTime);
+	return (0);
+}

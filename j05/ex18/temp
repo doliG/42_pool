@@ -1,0 +1,53 @@
+/* 
+************************************************************************** 
+*/
+/*                                                                            
+*/
+/*                                                        :::      
+::::::::   */
+/*   ft_strlcat.c                                       :+:      :+:    
+:+:   */
+/*                                                    +:+ +:+         
++:+     */
+/*   By: glodi <glodi@student.42.fr>                +#+  +:+       +#+        
+*/
+/*                                                +#+#+#+#+#+   +#+           
+*/
+/*   Created: 2017/08/10 09:49:51 by glodi             #+#    #+#             
+*/
+/*   Updated: 2017/08/11 10:58:34 by glodi            ###   ########.fr       
+*/
+/*                                                                            
+*/
+/* 
+************************************************************************** 
+*/
+
+#include <stdio.h>
+
+unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
+{
+	int sd;
+	int ss;
+	int i;
+
+	sd = 0;
+	while(dest[sd] != '\0')
+		sd++;
+	ss = 0;
+	while(src[ss] != '\0')
+		ss++;
+	if (ss + sd >= size)
+	{
+		printf("if\n");
+		return (0);
+	}
+	while (src[i] != '\0')
+	{
+		dest[sd + i] = src[i];
+		i++;
+	}
+	dest[sd + i] = '\0';
+	return (ss + i);
+}
+

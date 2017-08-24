@@ -1,0 +1,35 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glodi <glodi@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/08/07 09:53:45 by glodi             #+#    #+#             */
+/*   Updated: 2017/08/09 12:10:00 by glodi            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+
+int ft_iterative_factorial(int nb);
+
+int main()
+{
+	printf("%i\n", ft_iterative_factorial(-5));
+	printf("0 < expected\n\n");
+
+	printf("%i\n", ft_iterative_factorial(0));
+	printf("1 < expected\n\n");
+
+	printf("%i\n", ft_iterative_factorial(5));
+	printf("120 < expected\n\n");
+
+	printf("%i\n", ft_iterative_factorial(10));
+	printf("3628800 < expected\n\n");
+
+	printf("%i\n", ft_iterative_factorial(12));
+	printf("479001600 < expected\n\n");
+
+	return (0);
+}

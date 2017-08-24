@@ -1,0 +1,43 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glodi <glodi@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/08/08 08:34:53 by glodi             #+#    #+#             */
+/*   Updated: 2017/08/08 08:53:52 by glodi            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+#include <math.h>
+
+int ft_sqrt(int nb);
+
+int main()
+{
+	int n;
+
+	n = 4;
+	printf("%d\n", ft_sqrt(n));
+	printf("%d  < expected \n", (int)sqrt(n));
+
+	n = 8;
+	printf("%d\n", ft_sqrt(n));
+	printf("0  < expected \n");
+
+	n = 16;
+	printf("%d\n", ft_sqrt(n));
+	printf("%d  < expected \n", (int)sqrt(n));
+
+	n = 0;
+	printf("%d\n", ft_sqrt(n));
+	printf("%d  < expected \n", (int)sqrt(n));
+
+	n = 625000000;
+	printf("%d\n", ft_sqrt(n));
+	printf("%d  < expected \n", (int)sqrt(n));
+
+	return (0);
+}

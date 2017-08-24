@@ -1,0 +1,31 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glodi <glodi@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/08/07 16:33:06 by glodi             #+#    #+#             */
+/*   Updated: 2017/08/07 16:40:20 by glodi            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+
+int ft_iterative_power(int nb, int power);
+
+int main()
+{
+	printf("%d\n", ft_iterative_power(2, 2));
+	printf("4 < expected\n\n");
+
+	printf("%d\n", ft_iterative_power(2, -1));
+	printf("0 < expected\n\n");
+
+	printf("%d\n", ft_iterative_power(2, -1));
+	printf("0 < expected\n\n");
+
+	printf("%d\n", ft_iterative_power(2, 5));
+	printf("32 < expected\n\n");
+	return (0);
+}

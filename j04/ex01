@@ -1,0 +1,32 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glodi <glodi@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/08/07 16:04:11 by glodi             #+#    #+#             */
+/*   Updated: 2017/08/07 16:09:48 by glodi            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+
+int	ft_recursive_factorial(int nb);
+
+int main()
+{
+	printf("%i\n", ft_recursive_factorial(-5));
+	printf("0 < expected\n\n");
+
+	printf("%i\n", ft_recursive_factorial(0));
+	printf("1 < expected\n\n");
+
+	printf("%i\n", ft_recursive_factorial(5));
+	printf("120 < expected\n\n");
+
+	printf("%i\n", ft_recursive_factorial(10));
+	printf("3628800 < expected\n\n");
+
+	return (0);
+}

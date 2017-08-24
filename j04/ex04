@@ -1,0 +1,45 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   utils.c                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: glodi <glodi@student.42.fr>                +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2017/08/07 16:48:38 by glodi             #+#    #+#             */
+/*   Updated: 2017/08/08 08:17:12 by glodi            ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <stdio.h>
+
+int ft_fibonacci(int index);
+
+int main()
+{
+	printf("%d\n", ft_fibonacci(0));
+
+	printf("%d\n", ft_fibonacci(1));
+
+	printf("%d\n", ft_fibonacci(2));
+
+	printf("%d\n", ft_fibonacci(3));
+
+	printf("%d\n", ft_fibonacci(4));
+
+	printf("%d\n", ft_fibonacci(5));
+
+	printf("%d\n", ft_fibonacci(6));
+
+	printf("%d\n", ft_fibonacci(7));
+
+	printf("%d\n", ft_fibonacci(8));
+
+	printf("%d\n", ft_fibonacci(9));
+
+	printf("%d\n", ft_fibonacci(10));
+
+	printf("%d\n", ft_fibonacci(11));
+
+	printf("%d\n", ft_fibonacci(12));
+	return (0);
+}
